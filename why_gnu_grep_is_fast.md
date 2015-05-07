@@ -20,10 +20,10 @@ performance.  You may have noticed that discussion too...
 Anyway, just FYI, here's a quick summary of where GNU grep gets
 its speed.  Hopefully you can carry these ideas over to BSD grep.
 
-#1 trick: GNU grep is fast because it AVOIDS LOOKING AT
+1. trick: GNU grep is fast because it AVOIDS LOOKING AT
 EVERY INPUT BYTE.
 
-#2 trick: GNU grep is fast because it EXECUTES VERY FEW
+2. trick: GNU grep is fast because it EXECUTES VERY FEW
 INSTRUCTIONS FOR EACH BYTE that it *does* look at.
 
 GNU grep uses the well-known Boyer-Moore algorithm, which looks
@@ -97,6 +97,5 @@ Summary:
 The key to making programs fast is to make them do practically nothing. ;-)
 
 Regards,
-
 	Mike
 
